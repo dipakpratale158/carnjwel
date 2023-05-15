@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+::selection {
+  background-color: blue;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: rgb(226, 232, 233);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(184, 196, 199);
+}
+
+.product-slider {
+  &__img {
+    width: 100%;
+  }
+
+  &-thumbs {
+    .swiper-slide {
+      cursor: pointer;
+      border: 2px solid #dddbdb;
+
+      &-thumb-active {
+        border-color: #000;
+      }
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &-wrapper {
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+}
+
+
